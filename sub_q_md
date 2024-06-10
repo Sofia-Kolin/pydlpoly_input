@@ -1,0 +1,32 @@
+#!/bin/bash
+source /etc/profile.d/env_modules.sh
+PROG=python
+NCORES=12
+NTHREADS=1
+NSLOTS=12
+export OMP_NUM_THREADS=$NTHREADS
+export LD_LIBRARY_PATH=/opt/fftw/fftw-2.1.5_intel-16.0.3/lib:$LD_LIBRARY_PATH
+#$ -S /bin/bash
+#$ -cwd
+#$ -j y
+#$ -V
+#$ -r y
+#$ -N test_Cl_vdW
+#$ -o out
+#$ -q inf.q
+#$ -pe mpi-inf 12
+
+echo "running on $HOSTNAME"
+convhost $PE_HOSTFILE > hostfile.${JOB_ID}
+
+for n in `cat hostfile.${JOB_ID} | awk '{print $1}'`; do
+   ssh $n "mkdir -p $TMPDIR"
+   scp MD.py system* *.xyz  hostfile.${JOB_ID} $n:$TMPDIR
+done
+
+cd $TMPDIR
+mpirun --hostfile hostfile.${JOB_ID} -np $NSLOTS $PROG MD.py
+#mpirun --mca btl tcp,self --default-hostfile hostfile.${JOB_ID} -np $NSLOTS $PROG md.py
+
+
+cp -r * $SGE_CWD_PATH
