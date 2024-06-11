@@ -1,0 +1,10 @@
+No      Atom    type MFPX           Fragment    X
+100     Cl      cl0                 cl-         cl0@cl-
+61      Fe      fe5_o5              fe3o        fe5_o5@fe3o
+5       H       h1_c1               ph          h1_c1@ph
+75      O       o2_c1fe1            co2         o2_c1fe1@co2
+6       O       o3_fe3              fe3o        o3_fe3@fe3o
+2       C       c3_c2h1             ph          c3_c2h1@ph
+3       C       c3_c1o2             co2         c3_c1o2@co2
+4       C       c3_c3               ph          c3_c3@ph
+180     C       c3_c3               ph          c3_c3@ph
