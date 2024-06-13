@@ -42,56 +42,38 @@ bnd :
         ric : 4
         pot : mm3
         par :
-            kb : 1.0  # mdyne/A
-            r0 : 1.49759845 # A
-        fit :
-            kb : {var : $b1_0, range : [0.0, 8.0]}
-            r0 : {var : $b1_1, range : [1.3478386, 1.64735829]}
+            kb : 5.507563  # mdyne/A
+            r0 : 1.465661 # A
     mm3->(c3_c1o2@co2,o2_c1fe1@co2)|mil88 :
         ric : 5
         pot : mm3
         par :
-            kb : 1.0  # mdyne/A
-            r0 : 1.30060583 # A
-        fit :
-            kb : {var : $b2_0, range : [0.0, 8.0]}
-            r0 : {var : $b2_1, range : [1.17054524, 1.43066641]}
+            kb : 7.904084  # mdyne/A
+            r0 : 1.286633 # A
     mm3->(c3_c2h1@ph,c3_c3_b@ph)|mil88 :
         ric : 6
         pot : mm3
         par :
-            kb : 1.0  # mdyne/A
-            r0 : 1.42379259 # A
-        fit :
-            kb : {var : $b3_0, range : [0.0, 8.0]}
-            r0 : {var : $b3_1, range : [1.28141333, 1.56617184]}
+            kb : 7.08  # mdyne/A
+            r0 : 1.394 # A
     mm3->(c3_c3_b@ph,c3_c3_b@ph)|mil88 :
         ric : 7
         pot : mm3
         par :
-            kb : 1.0  # mdyne/A
-            r0 : 1.48913823 # A
-        fit :
-            kb : {var : $b4_0, range : [0.0, 8.0]}
-            r0 : {var : $b4_1, range : [1.34022441, 1.63805206]}
+            kb : 7.08  # mdyne/A
+            r0 : 1.394 # A
     mm3->(fe5_o5@fe3o,o3_fe3@fe3o)|mil88 :
         ric : 8
         pot : mm3
         par :
-            kb : 1.0  # mdyne/A
-            r0 : 2.13528525 # A
-        fit :
-            kb : {var : $b5_0, range : [0.0, 8.0]}
-            r0 : {var : $b5_1, range : [1.92175672, 2.34881377]}
+            kb : 3.199630  # mdyne/A
+            r0 : 1.850696 # A
     mm3->(fe5_o5@fe3o,o2_c1fe1@co2)|mil88 :
         ric : 9
         pot : mm3
         par :
-            kb : 1.0  # mdyne/A
-            r0 : 2.04571233 # A
-        fit :
-            kb : {var : $b6_0, range : [0.0, 8.0]}
-            r0 : {var : $b6_1, range : [1.8411411, 2.25028356]}
+            kb : 1.657018  # mdyne/A
+            r0 : 1.936573 # A
 ang :
     mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph :
         ric : 1
