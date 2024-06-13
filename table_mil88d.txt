@@ -7,4 +7,4 @@ No      Atom    type MFPX           Fragment    X
 2       C       c3_c2h1             ph          c3_c2h1@ph
 3       C       c3_c1o2             co2         c3_c1o2@co2
 4       C       c3_c3               ph          c3_c3@ph
-180     C       c3_c3               ph          c3_c3@ph
+180     C       c3_c3_b             ph          c3_c3_b@ph
