@@ -20,55 +20,55 @@ settings :
     chargegen : ff
     topoqeq_par : topoqeq.par
 bnd :
-    mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph :
+    mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph : # 2 4
         ric : 1
         pot : mm3
         par :
             kb : 7.08  # mdyne/A
             r0 : 1.394 # A
-    mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene :
+    mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene : # 2 2
         ric : 2
         pot : mm3
         par :
             kb : 7.08  # mdyne/A
             r0 : 1.394 # A
-    mm3->(c3_c2h1@ph,h1_c1@ph)|benzene :
+    mm3->(c3_c2h1@ph,h1_c1@ph)|benzene : # 2 5
         ric : 3
         pot : mm3
         par :
             kb : 5.43  # mdyne/A
             r0 : 1.094 # A
-    mm3->(c3_c1o2@co2,c3_c3@ph)|mil88 :
+    mm3->(c3_c1o2@co2,c3_c3@ph)|mil88 : #3 4
         ric : 4
         pot : mm3
         par :
             kb : 5.507563  # mdyne/A
             r0 : 1.465661 # A
-    mm3->(c3_c1o2@co2,o2_c1fe1@co2)|mil88 :
+    mm3->(c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 3 75
         ric : 5
         pot : mm3
         par :
             kb : 7.904084  # mdyne/A
             r0 : 1.286633 # A
-    mm3->(c3_c2h1@ph,c3_c3_b@ph)|mil88 :
+    mm3->(c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 180
         ric : 6
         pot : mm3
         par :
             kb : 7.08  # mdyne/A
             r0 : 1.394 # A
-    mm3->(c3_c3_b@ph,c3_c3_b@ph)|mil88 :
+    mm3->(c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 180 180
         ric : 7
         pot : mm3
         par :
             kb : 7.08  # mdyne/A
             r0 : 1.394 # A
-    mm3->(fe5_o5@fe3o,o3_fe3@fe3o)|mil88 :
+    mm3->(fe5_o5@fe3o,o3_fe3@fe3o)|mil88 : # 61 6
         ric : 8
         pot : mm3
         par :
             kb : 3.199630  # mdyne/A
             r0 : 1.850696 # A
-    mm3->(fe5_o5@fe3o,o2_c1fe1@co2)|mil88 :
+    mm3->(fe5_o5@fe3o,o2_c1fe1@co2)|mil88 : # 61 75
         ric : 9
         pot : mm3
         par :
