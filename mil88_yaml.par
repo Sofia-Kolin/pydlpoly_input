@@ -75,31 +75,31 @@ bnd :
             kb : 1.657018  # mdyne/A
             r0 : 1.936573 # A
 ang :
-    mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph :
+    mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph : # 2 4 2
         ric : 1
         pot : mm3
         par :
-            ka : 0.741  # mdyn*A/rad^2
-            a0 : 127.05 # deg
-    mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph :
+            ka : 0.954803  # mdyn*A/rad^2
+            a0 : 116.633347 # deg
+    mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph : # 2 2 4
         ric : 2
         pot : mm3
         par :
-            ka : 0.741  # mdyn*A/rad^2
-            a0 : 127.05 # deg
-    mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph :
+            ka : 0.977738  # mdyn*A/rad^2
+            a0 : 122.254870 # deg
+    mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph : # 4 2 5
         ric : 3
         pot : mm3
         par :
-            ka : 0.503  # mdyn*A/rad^2
-            a0 : 120.35 # deg
-    mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene :
+            ka : 0.499736  # mdyn*A/rad^2
+            a0 : 115.542562 # deg
+    mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene : # 2 2 5
         ric : 4
         pot : mm3
         par :
-            ka : 0.503  # mdyn*A/rad^2
-            a0 : 120.35 # deg
-    strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene :
+            ka : 0.503000  # mdyn*A/rad^2
+            a0 : 120.350000 # deg
+    strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene : # 2 2 5
         ric : 4
         pot : strbnd
         par :
@@ -109,295 +109,206 @@ ang :
             r01 : 1.394 # A
             r02 : 1.094 # A
             a0 : 120.35 # deg
-    mm3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88 :
+    mm3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 4 3 75
         ric : 5
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 117.0608823 # deg
-        fit :
-            ka : {var : $a1_0, range : [0.0, 2.0]}
-            a0 : {var : $a1_1, range : [105.35479407, 128.76697053]}
-    mm3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88 :
+            ka : 1.265062  # mdyn*A/rad^2
+            a0 : 114.230190 # deg
+    mm3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 75 3 75
         ric : 6
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 125.59937164 # deg
-        fit :
-            ka : {var : $a2_0, range : [0.0, 2.0]}
-            a0 : {var : $a2_1, range : [113.03943448, 138.15930881]}
-    mm3->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 :
+            ka : 1.169966  # mdyn*A/rad^2
+            a0 : 120.068005 # deg
+    mm3->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 3 4 2
         ric : 7
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 120.00012171 # deg
-        fit :
-            ka : {var : $a3_0, range : [0.0, 2.0]}
-            a0 : {var : $a3_1, range : [108.00010954, 132.00013388]}
-    mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 :
+            ka : 1.165020  # mdyn*A/rad^2
+            a0 : 111.782190 # deg
+    mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 2 180
         ric : 8
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 121.12732312 # deg
-        fit :
-            ka : {var : $a4_0, range : [0.0, 2.0]}
-            a0 : {var : $a4_1, range : [109.01459081, 133.24005543]}
-    mm3->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88 :
+            ka : 0.7410  # mdyn*A/rad^2
+            a0 : 127.0500 # deg
+    mm3->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 5
         ric : 9
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 119.83968506 # deg
-        fit :
-            ka : {var : $a5_0, range : [0.0, 2.0]}
-            a0 : {var : $a5_1, range : [107.85571656, 131.82365357]}
-    mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 :
+            ka : 0.5030  # mdyn*A/rad^2
+            a0 : 120.3500 # deg
+    mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 2 180 180
         ric : 10
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 120.6243482 # deg
-        fit :
-            ka : {var : $a6_0, range : [0.0, 2.0]}
-            a0 : {var : $a6_1, range : [108.56191338, 132.68678302]}
-    mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 :
+            ka : 0.7410  # mdyn*A/rad^2
+            a0 : 127.0500 # deg
+    mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 2 180 2
         ric : 11
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 118.00015028 # deg
-        fit :
-            ka : {var : $a7_0, range : [0.0, 2.0]}
-            a0 : {var : $a7_1, range : [106.20013525, 129.80016531]}
-    mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88 :
+            ka : 0.7410  # mdyn*A/rad^2
+            a0 : 127.0500 # deg
+    mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88 : # 75 61 6
         ric : 12
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 84.32943765 # deg
-        fit :
-            ka : {var : $a8_0, range : [0.0, 2.0]}
-            a0 : {var : $a8_1, range : [75.89649389, 92.76238142]}
-    mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2)|mil88 :
+            ka : 0.012039  # mdyn*A/rad^2
+            a0 : 78.335332 # deg
+    mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2)|mil88 : # 75 61 75
         ric : 13
         pot : mm3
         par :
             ka : 1.0  # mdyn*A/rad^2
             a0 : 91.47981718 # deg
-        fit :
-            ka : {var : $a9_0, range : [0.0, 2.0]}
-            a0 : {var : $a9_1, range : [82.33183546, 100.6277989]}
-    mm3->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 :
+    mm3->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 : # 61 6 61
         ric : 14
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 122.09942559 # deg
-        fit :
-            ka : {var : $a10_0, range : [0.0, 2.0]}
-            a0 : {var : $a10_1, range : [109.88948303, 134.30936815]}
-    mm3->(c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 :
+            ka : 0.281770  # mdyn*A/rad^2
+            a0 : 123.127587 # deg
+    mm3->(c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 3 75 61
         ric : 15
         pot : mm3
         par :
-            ka : 1.0  # mdyn*A/rad^2
-            a0 : 124.65298264 # deg
-        fit :
-            ka : {var : $a11_0, range : [0.0, 2.0]}
-            a0 : {var : $a11_1, range : [112.18768438, 137.1182809]}
+            ka : 0.365553  # mdyn*A/rad^2
+            a0 : 130.543006 # deg
 dih :
-    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph :
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph : # 2 2 4 2
         ric : 1
         pot : cos3
         par :
             V1 : 0.0  # kcal/mol
-            V2 : 4.525 # kcal/mol
+            V2 : 3.523253 # kcal/mol
             V3 : 0.0 # kcal/mol
-    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph :
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph : # 5 2 4 2
         ric : 2
         pot : cos3
         par :
             V1 : 0.0  # kcal/mol
-            V2 : 6.325 # kcal/mol
+            V2 : 5.427836 # kcal/mol
             V3 : 0.0 # kcal/mol
-    cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph :
+    cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph : # 180 2 2 4
         ric : 3
         pot : cos3
         par :
             V1 : 0.0  # kcal/mol
-            V2 : 4.525 # kcal/mol
+            V2 : 4.3790 # kcal/mol
             V3 : 0.0 # kcal/mol
-    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph :
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph : # 5 2 2 4
         ric : 4
         pot : cos3
         par :
             V1 : 0.0  # kcal/mol
-            V2 : 6.325 # kcal/mol
+            V2 : 6.812591 # kcal/mol
             V3 : 0.0 # kcal/mol
-    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene :
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene : # 5 2 2 5
         ric : 5
         pot : cos3
         par :
             V1 : 0.0  # kcal/mol
-            V2 : 5.972 # kcal/mol
+            V2 : 5.972000 # kcal/mol
             V3 : 0.0 # kcal/mol
-    cos3->(o2_c1fe1@co2,c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 :
+    cos3->(o2_c1fe1@co2,c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 75 3 4 2
         ric : 6
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d1_0, range : [0.0, 15.0]}
-            V2 : {var : $d1_1, range : [0.0, 15.0]}
-            V3 : {var : $d1_2, range : [0.0, 15.0]}
-    cos3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 2.470272 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 4 3 75 61
         ric : 7
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d2_0, range : [0.0, 15.0]}
-            V2 : {var : $d2_1, range : [0.0, 15.0]}
-            V3 : {var : $d2_2, range : [0.0, 15.0]}
-    cos3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 5.530560 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 75 3 75 61
         ric : 8
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d3_0, range : [0.0, 15.0]}
-            V2 : {var : $d3_1, range : [0.0, 15.0]}
-            V3 : {var : $d3_2, range : [0.0, 15.0]}
-    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.789364 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88 : # 2 2 4 3
         ric : 9
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d4_0, range : [0.0, 15.0]}
-            V2 : {var : $d4_1, range : [0.0, 15.0]}
-            V3 : {var : $d4_2, range : [0.0, 15.0]}
-    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 7.043618 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88 : # 5 2 4 3
         ric : 10
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d5_0, range : [0.0, 15.0]}
-            V2 : {var : $d5_1, range : [0.0, 15.0]}
-            V3 : {var : $d5_2, range : [0.0, 15.0]}
-    cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.700735 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 2 5
         ric : 11
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d6_0, range : [0.0, 15.0]}
-            V2 : {var : $d6_1, range : [0.0, 15.0]}
-            V3 : {var : $d6_2, range : [0.0, 15.0]}
-    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 6.3160 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 2 2 180 180
         ric : 12
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d7_0, range : [0.0, 15.0]}
-            V2 : {var : $d7_1, range : [0.0, 15.0]}
-            V3 : {var : $d7_2, range : [0.0, 15.0]}
-    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 2 2 180 2
         ric : 13
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d8_0, range : [0.0, 15.0]}
-            V2 : {var : $d8_1, range : [0.0, 15.0]}
-            V3 : {var : $d8_2, range : [0.0, 15.0]}
-    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 5 2 180 180
         ric : 14
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d9_0, range : [0.0, 15.0]}
-            V2 : {var : $d9_1, range : [0.0, 15.0]}
-            V3 : {var : $d9_2, range : [0.0, 15.0]}
-    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 5 2 180 2
         ric : 15
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d10_0, range : [0.0, 15.0]}
-            V2 : {var : $d10_1, range : [0.0, 15.0]}
-            V3 : {var : $d10_2, range : [0.0, 15.0]}
-    cos3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 6.3160 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 2 180 180 2
         ric : 16
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d11_0, range : [0.0, 15.0]}
-            V2 : {var : $d11_1, range : [0.0, 15.0]}
-            V3 : {var : $d11_2, range : [0.0, 15.0]}
-    cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.0 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 : # 75 61 6 61
         ric : 17
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d12_0, range : [0.0, 15.0]}
-            V2 : {var : $d12_1, range : [0.0, 15.0]}
-            V3 : {var : $d12_2, range : [0.0, 15.0]}
-    cos3->(o3_fe3@fe3o,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 1.778019 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o3_fe3@fe3o,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88 : # 6 61 75 3
         ric : 18
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d13_0, range : [0.0, 15.0]}
-            V2 : {var : $d13_1, range : [0.0, 15.0]}
-            V3 : {var : $d13_2, range : [0.0, 15.0]}
-    cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88 :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.276745 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88 : # 75 61 75 3
         ric : 19
         pot : cos3
         par :
-            V1 : 1.0  # kcal/mol
-            V2 : 1.0 # kcal/mol
-            V3 : 1.0 # kcal/mol
-        fit :
-            V1 : {var : $d14_0, range : [0.0, 15.0]}
-            V2 : {var : $d14_1, range : [0.0, 15.0]}
-            V3 : {var : $d14_2, range : [0.0, 15.0]}
+            V1 : 0.0  # kcal/mol
+            V2 : 0.0 # kcal/mol
+            V3 : 0.0 # kcal/mol
 oop :
     harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph :
         ric : 1
