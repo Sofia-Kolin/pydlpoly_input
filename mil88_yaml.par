@@ -115,11 +115,31 @@ ang :
         par :
             ka : 1.265062  # mdyn*A/rad^2
             a0 : 114.230190 # deg
+    strbnd->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 4 3 75
+        ric : 5
+        pot : strbnd
+        par :
+            ksb1 : 0.062289  # mdyn*A/rad^2
+            ksb2 : 0.349524 # mdyn*A/rad^2
+            kss : 0.050955 # mdyn/A
+            r01 : 1.465661 # A
+            r02 : 1.286633 # A
+            a0 : 114.230190 # deg
     mm3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 75 3 75
         ric : 6
         pot : mm3
         par :
             ka : 1.169966  # mdyn*A/rad^2
+            a0 : 120.068005 # deg
+    strbnd->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 75 3 75
+        ric : 6
+        pot : strbnd
+        par :
+            ksb1 : 0.1188445  # mdyn*A/rad^2
+            ksb2 : 0.1188445 # mdyn*A/rad^2
+            kss : 1.339837 # mdyn/A
+            r01 : 1.286633 # A
+            r02 : 1.286633 # A
             a0 : 120.068005 # deg
     mm3->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 3 4 2
         ric : 7
@@ -127,17 +147,47 @@ ang :
         par :
             ka : 1.165020  # mdyn*A/rad^2
             a0 : 111.782190 # deg
+    strbnd->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 3 4 2
+        ric : 7
+        pot : strbnd
+        par :
+            ksb1 : -0.094745  # mdyn*A/rad^2
+            ksb2 : 0.175389 # mdyn*A/rad^2
+            kss : 0.368871 # mdyn/A
+            r01 : 1.465661 # A
+            r02 : 1.401856 # A
+            a0 : 111.782190 # deg
     mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 2 180
         ric : 8
         pot : mm3
         par :
             ka : 0.7410  # mdyn*A/rad^2
             a0 : 127.0500 # deg
+    strbnd->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 2 180
+        ric : 8
+        pot : strbnd
+        par :
+            ksb1 : 0.0470  # mdyn*A/rad^2
+            ksb2 : 0.0470 # mdyn*A/rad^2
+            kss : 0.4990 # mdyn/A
+            r01 : 1.394000 # A
+            r02 : 1.3940 # A
+            a0 : 127.0500 # deg
     mm3->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 5
         ric : 9
         pot : mm3
         par :
             ka : 0.5030  # mdyn*A/rad^2
+            a0 : 120.3500 # deg
+    strbnd->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 5
+        ric : 9
+        pot : strbnd
+        par :
+            ksb1 : -0.1750  # mdyn*A/rad^2
+            ksb2 : 0.3720 # mdyn*A/rad^2
+            kss : 0.6490 # mdyn/A
+            r01 : 1.3940 # A
+            r02 : 1.094000 # A
             a0 : 120.3500 # deg
     mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 2 180 180
         ric : 10
@@ -157,6 +207,16 @@ ang :
         par :
             ka : 0.012039  # mdyn*A/rad^2
             a0 : 78.335332 # deg
+    strbnd->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88 : # 75 61 6
+        ric : 12
+        pot : strbnd
+        par :
+            ksb1 : -0.149017  # mdyn*A/rad^2
+            ksb2 : -0.114970 # mdyn*A/rad^2
+            kss : 0.050955 # mdyn/A
+            r01 : 1.936573 # A
+            r02 : 1.850696 # A
+            a0 : 78.335332 # deg
     mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2)|mil88 : # 75 61 75
         ric : 13
         pot : mm3
@@ -168,6 +228,16 @@ ang :
         pot : mm3
         par :
             ka : 0.281770  # mdyn*A/rad^2
+            a0 : 123.127587 # deg
+    strbnd->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 : # 61 6 61
+        ric : 14
+        pot : strbnd
+        par :
+            ksb1 : -0.1632455  # mdyn*A/rad^2
+            ksb2 : -0.1632455 # mdyn*A/rad^2
+            kss : 0.491665 # mdyn/A
+            r01 : 1.850696 # A
+            r02 : 1.850696 # A
             a0 : 123.127587 # deg
     mm3->(c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 3 75 61
         ric : 15
@@ -308,54 +378,44 @@ dih :
         par :
             V1 : 0.0  # kcal/mol
             V2 : 0.0 # kcal/mol
-            V3 : 0.0 # kcal/mol
+            V3 : 0.0 # kcal/mol        
 oop :
-    harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph :
+    harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph : # 2 2 4 5
         ric : 1
         pot : harm
         par :
-            ko : 0.058  # mdyne*A/rad^2
+            ko : 0.037733  # mdyne*A/rad^2
             o0 : 0.0 # deg
-    harm->(c3_c1o2@co2,c3_c3@ph,o2_c1fe1@co2,o2_c1fe1@co2)|mil88 :
+    harm->(c3_c1o2@co2,c3_c3@ph,o2_c1fe1@co2,o2_c1fe1@co2)|mil88 : # 3 4 75 75
         ric : 2
         pot : harm
         par :
-            ko : 1.0  # mdyne*A/rad^2
+            ko : 0.152725  # mdyne*A/rad^2
             o0 : 0.0 # deg
-        fit :
-            ko : {var : $o1_0, range : [0.0, 1.0]}
-    harm->(c3_c3@ph,c3_c1o2@co2,c3_c2h1@ph,c3_c2h1@ph)|mil88 :
+    harm->(c3_c3@ph,c3_c1o2@co2,c3_c2h1@ph,c3_c2h1@ph)|mil88 : # 4 3 2 2
         ric : 3
         pot : harm
         par :
-            ko : 1.0  # mdyne*A/rad^2
+            ko : 0.1  # mdyne*A/rad^2
             o0 : 0.0 # deg
-        fit :
-            ko : {var : $o2_0, range : [0.0, 1.0]}
-    harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,h1_c1@ph)|mil88 :
+    harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,h1_c1@ph)|mil88 : # 2 2 180 5
         ric : 4
         pot : harm
         par :
-            ko : 1.0  # mdyne*A/rad^2
+            ko : 0.1  # mdyne*A/rad^2
             o0 : 0.0 # deg
-        fit :
-            ko : {var : $o3_0, range : [0.0, 1.0]}
-    harm->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 :
+    harm->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 180 2 2 180
         ric : 5
         pot : harm
         par :
-            ko : 1.0  # mdyne*A/rad^2
+            ko : 0.0190  # mdyne*A/rad^2
             o0 : 0.0 # deg
-        fit :
-            ko : {var : $o4_0, range : [0.0, 1.0]}
-    harm->(o3_fe3@fe3o,fe5_o5@fe3o,fe5_o5@fe3o,fe5_o5@fe3o)|mil88 :
+    harm->(o3_fe3@fe3o,fe5_o5@fe3o,fe5_o5@fe3o,fe5_o5@fe3o)|mil88 : # 6 61 61 61
         ric : 6
         pot : harm
         par :
-            ko : 1.0  # mdyne*A/rad^2
+            ko : 0.021054  # mdyne*A/rad^2
             o0 : 0.0 # deg
-        fit :
-            ko : {var : $o5_0, range : [0.0, 1.0]}
 cha :
     gaussian->(c3_c3@ph)|ph-ph :
         ric : 1
