@@ -417,60 +417,60 @@ oop :
             ko : 0.021054  # mdyne*A/rad^2
             o0 : 0.0 # deg
 cha :
-    gaussian->(c3_c3@ph)|ph-ph :
+    gaussian->(c3_c3@ph)|ph-ph : # 4
         ric : 1
         pot : gaussian
         par :
-            q : 0.0  # e
+            q : -0.030000  # e
             sigma : 1.162986 # A
-    gaussian->(c3_c2h1@ph)|benzene :
+    gaussian->(c3_c2h1@ph)|benzene : # 2
         ric : 2
         pot : gaussian
         par :
-            q : -0.12  # e
+            q : -0.120000  # e
             sigma : 1.162986 # A
-    gaussian->(h1_c1@ph)|benzene :
+    gaussian->(h1_c1@ph)|benzene : # 5
         ric : 3
         pot : gaussian
         par :
             q : 0.12  # e
             sigma : 0.723638 # A
-    gaussian->(c3_c1o2@co2)|mil88 :
+    gaussian->(c3_c1o2@co2)|mil88 : # 3
         ric : 4
         pot : gaussian
         par :
-            q : 0.0  # e
+            q : 0.83  # e
             sigma : 1.162986 # A
-    gaussian->(c3_c3_b@ph)|mil88 :
+    gaussian->(c3_c3_b@ph)|mil88 : # 180
         ric : 5
         pot : gaussian
         par :
-            q : 0.0  # e
-            sigma : 1.162986 # A
-    gaussian->(fe5_o5@fe3o)|mil88 :
+            q : -0.1  # e
+            sigma : 1.163 # A
+    gaussian->(fe5_o5@fe3o)|mil88 : # 61
         ric : 6
         pot : gaussian
         par :
-            q : 0.0  # e
-            sigma : 0.0 # A
-    gaussian->(o3_fe3@fe3o)|mil88 :
+            q : 1.6  # e
+            sigma : 2.073 # A
+    gaussian->(o3_fe3@fe3o)|mil88 : # 6
         ric : 7
         pot : gaussian
         par :
-            q : 0.0  # e
-            sigma : 1.117553 # A
-    gaussian->(o2_c1fe1@co2)|mil88 :
+            q : -0.8  # e
+            sigma : 1.118000 # A
+    gaussian->(o2_c1fe1@co2)|mil88 : # 75
         ric : 8
         pot : gaussian
         par :
-            q : 0.0  # e
-            sigma : 1.117553 # A
-    gaussian->(cl0_@cl-)|mil88 :
+            q : -0.65  # e
+            sigma : 1.118000 # A
+    gaussian->(cl0_@cl-)|mil88 : # 100
         ric : 9
         pot : gaussian
         par :
-            q : 0.0  # e
-            sigma : 1.5789 # A
+            q : -1.0  # e
+            sigma : 1.57 # A
 vdw :
     buck6d->(c3_c3@ph)|ph-ph :
         ric : 1
