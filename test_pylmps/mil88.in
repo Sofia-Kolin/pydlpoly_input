@@ -1,0 +1,153 @@
+clear
+units real
+boundary p p p
+atom_style full
+box tilt large
+read_data mil88.data
+
+neighbor 2.0 bin
+
+
+# ------------------------ None FORCE FIELD ------------------------------
+
+pair_style buck6d/coul/gauss/dsf    0.90000   12.00000   12.00000
+pair_coeff     1     1           356960       107.14286    8.615736e-06   1.0923547e-21      0.60800971    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88
+pair_coeff     1     2           356960       107.14286    8.615736e-06   1.0923547e-21      0.60800971    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph
+pair_coeff     1     3        358795.28       107.14286   8.6600332e-06   1.0923547e-21      0.60800971    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene
+pair_coeff     1     4        358795.28       107.14286   8.6600332e-06   1.0923547e-21      0.60800605    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88
+pair_coeff     1     5        380128.15       157.89474   8.9572826e-07   4.7940401e-24      0.42070817    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88
+pair_coeff     1     6        326194.17       157.89474   7.6863905e-07   4.7940401e-24      0.73006542    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+pair_coeff     1     7        345743.78       104.34783   9.7792628e-06   1.5815435e-21      0.61988044    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     1     8        345743.78       104.34783   9.7792628e-06   1.5815435e-21      0.61988044    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     1     9        368726.08       40.540541    0.0030326258   8.8592167e-16      0.51181628    # buck6d->(c3_c1o2@co2)|mil88/gaussian->(c3_c1o2@co2)|mil88 <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     2     2           356960       107.14286    8.615736e-06   1.0923547e-21      0.60800971    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph
+pair_coeff     2     3        358795.28       107.14286   8.6600332e-06   1.0923547e-21      0.60800971    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene
+pair_coeff     2     4        358795.28       107.14286   8.6600332e-06   1.0923547e-21      0.60800605    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88
+pair_coeff     2     5        380128.15       157.89474   8.9572826e-07   4.7940401e-24      0.42070817    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88
+pair_coeff     2     6        326194.17       157.89474   7.6863905e-07   4.7940401e-24      0.73006542    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+pair_coeff     2     7        345743.78       104.34783   9.7792628e-06   1.5815435e-21      0.61988044    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     2     8        345743.78       104.34783   9.7792628e-06   1.5815435e-21      0.61988044    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     2     9        368726.08       40.540541    0.0030326258   8.8592167e-16      0.51181628    # buck6d->(c3_c3@ph)|ph-ph/gaussian->(c3_c3@ph)|ph-ph <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     3     3           360640       107.14286    8.704558e-06   1.0923547e-21      0.60800971    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene
+pair_coeff     3     4           360640       107.14286    8.704558e-06   1.0923547e-21      0.60800605    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88
+pair_coeff     3     5        382082.55       157.89474   9.0033358e-07   4.7940401e-24      0.42070817    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88
+pair_coeff     3     6        327871.27       157.89474   7.7259095e-07   4.7940401e-24      0.73006542    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+pair_coeff     3     7         347521.4       104.34783   9.8295422e-06   1.5815435e-21      0.61988044    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     3     8         347521.4       104.34783   9.8295422e-06   1.5815435e-21      0.61988044    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     3     9        370621.86       40.540541    0.0030482178   8.8592167e-16      0.51181628    # buck6d->(c3_c2h1@ph)|benzene/gaussian->(c3_c2h1@ph)|benzene <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     4     4           360640       107.14286    8.704558e-06   1.0923547e-21      0.60800239    # buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88 <--> buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88
+pair_coeff     4     5        382082.55       157.89474   9.0033358e-07   4.7940401e-24      0.42070696    # buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88 <--> buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88
+pair_coeff     4     6        327871.27       157.89474   7.7259095e-07   4.7940401e-24      0.73005908    # buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88 <--> buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+pair_coeff     4     7         347521.4       104.34783   9.8295422e-06   1.5815435e-21      0.61987656    # buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88 <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     4     8         347521.4       104.34783   9.8295422e-06   1.5815435e-21      0.61987656    # buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88 <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     4     9        370621.86       40.540541    0.0030482178   8.8592167e-16      0.51181409    # buck6d->(c3_c3_b@ph)|mil88/gaussian->(c3_c3_b@ph)|mil88 <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     5     5           404800             300     2.02752e-08           6e-28      0.34110313    # buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88 <--> buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88
+pair_coeff     5     6        347365.49             300    1.739848e-08           6e-28      0.45544118    # buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88 <--> buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+pair_coeff     5     7        368183.95       151.89873   1.0944404e-06   8.2431015e-24      0.42458145    # buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88 <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     5     8        368183.95       151.89873   1.0944404e-06   8.2431015e-24      0.42458145    # buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88 <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     5     9         392657.9       46.153846    0.0014832663   1.4419103e-16      0.38455199    # buck6d->(fe5_o5@fe3o)|mil88/gaussian->(fe5_o5@fe3o)|mil88 <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     6     6           298080             300    1.492992e-08           6e-28       0.9771554    # buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene <--> buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene
+pair_coeff     6     7        315944.66       151.89873   9.3915715e-07   8.2431015e-24       0.7508879    # buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     6     8        315944.66       151.89873   9.3915715e-07   8.2431015e-24       0.7508879    # buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     6     9        336946.15       46.153846     0.001272815   1.4419103e-16      0.57845502    # buck6d->(h1_c1@ph)|benzene/gaussian->(h1_c1@ph)|benzene <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     7     7           334880       101.69492   1.1054674e-05   2.2680858e-21      0.63247476    # buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88 <--> buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88
+pair_coeff     7     8           334880       101.69492   1.1054674e-05   2.2680858e-21      0.63247476    # buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88 <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     7     9        357140.16       40.133779    0.0031205455   1.0202533e-15      0.51883693    # buck6d->(o3_fe3@fe3o)|mil88/gaussian->(o3_fe3@fe3o)|mil88 <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     8     8           334880       101.69492   1.1054674e-05   2.2680858e-21      0.63247476    # buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88 <--> buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88
+pair_coeff     8     9        357140.16       40.133779    0.0031205455   1.0202533e-15      0.51883693    # buck6d->(o2_c1fe1@co2)|mil88/gaussian->(o2_c1fe1@co2)|mil88 <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+pair_coeff     9     9           380880              25     0.056963975   7.7035108e-13      0.45038648    # buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88 <--> buck6d->(cl0_@cl-)|mil88/gaussian->(cl0_@cl-)|mil88
+
+bond_style hybrid class2
+
+bond_coeff     1 class2     1.465661   396.214082 -1010.345910  1502.889541    # mm3->(c3_c1o2@co2,c3_c3@ph)|mil88
+bond_coeff     2 class2     1.286633   568.619803 -1449.980498  2156.845990    # mm3->(c3_c1o2@co2,o2_c1fe1@co2)|mil88
+bond_coeff     3 class2     1.394000   509.335200 -1298.804760  1931.972080    # mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph
+bond_coeff     4 class2     1.394000   509.335200 -1298.804760  1931.972080    # mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene
+bond_coeff     5 class2     1.094000   390.634200  -996.117210  1481.724350    # mm3->(c3_c2h1@ph,h1_c1@ph)|benzene
+bond_coeff     6 class2     1.394000   509.335200 -1298.804760  1931.972080    # mm3->(c3_c2h1@ph,c3_c3_b@ph)|mil88
+bond_coeff     7 class2     1.394000   509.335200 -1298.804760  1931.972080    # mm3->(c3_c3_b@ph,c3_c3_b@ph)|mil88
+bond_coeff     8 class2     1.850696   230.181382  -586.962525   873.106755    # mm3->(fe5_o5@fe3o,o3_fe3@fe3o)|mil88
+bond_coeff     9 class2     1.936573   119.205875  -303.974981   452.162784    # mm3->(fe5_o5@fe3o,o2_c1fe1@co2)|mil88
+
+angle_style hybrid class2/p6
+
+angle_coeff     1 class2/p6   114.230190    91.008560   -73.001690    16.730755   -11.982521    21.577218    # mm3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88
+angle_coeff     1 class2/p6 bb     7.331405     1.465661     1.286633
+angle_coeff     1 class2/p6 ba     8.962141    50.289513     1.465661     1.286633   # strbnd->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88
+angle_coeff     2 class2/p6   120.068005    84.167354   -67.514078    15.473087   -11.081782    19.955237    # mm3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88
+angle_coeff     2 class2/p6 bb   192.775748     1.286633     1.286633
+angle_coeff     2 class2/p6 ba    17.099347    17.099347     1.286633     1.286633   # strbnd->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88
+angle_coeff     3 class2/p6   111.782190    83.811539   -67.228664    15.407675   -11.034934    19.870877    # mm3->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88
+angle_coeff     3 class2/p6 bb    53.073159     1.465661     1.401856
+angle_coeff     3 class2/p6 ba   -13.631911    25.234969     1.465661     1.401856   # strbnd->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88
+angle_coeff     4 class2/p6   116.633347    68.688528   -55.097878    12.627504    -9.043783    16.285362    # mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph
+angle_coeff     5 class2/p6   122.254870    70.338472   -56.421366    12.930825    -9.261021    16.676547    # mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph
+angle_coeff     6 class2/p6   115.542562    35.951008   -28.837774     6.609131    -4.733441     8.523624    # mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph
+angle_coeff     7 class2/p6   120.350000    36.185820   -29.026127     6.652298    -4.764358     8.579296    # mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene
+angle_coeff     7 class2/p6 bb    93.378120     1.394000     1.094000
+angle_coeff     7 class2/p6 ba   -25.179000    53.523360     1.394000     1.094000   # strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene
+angle_coeff     8 class2/p6   127.050000    53.307540   -42.760159     9.799907    -7.018666    12.638684    # mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88
+angle_coeff     8 class2/p6 bb    71.796120     1.394000     1.394000
+angle_coeff     8 class2/p6 ba     6.762360     6.762360     1.394000     1.394000   # strbnd->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88
+angle_coeff     9 class2/p6   120.350000    36.185820   -29.026127     6.652298    -4.764358     8.579296    # mm3->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88
+angle_coeff     9 class2/p6 bb    93.378120     1.394000     1.094000
+angle_coeff     9 class2/p6 ba   -25.179000    53.523360     1.394000     1.094000   # strbnd->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88
+angle_coeff    10 class2/p6   127.050000    53.307540   -42.760159     9.799907    -7.018666    12.638684    # mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88
+angle_coeff    11 class2/p6   127.050000    53.307540   -42.760159     9.799907    -7.018666    12.638684    # mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88
+angle_coeff    12 class2/p6    78.335332     0.866086    -0.694723     0.159219    -0.114032     0.205340    # mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88
+angle_coeff    12 class2/p6 bb     7.331405     1.936573     1.850696
+angle_coeff    12 class2/p6 ba   -21.440566   -16.541884     1.936573     1.850696   # strbnd->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88
+angle_coeff    13 class2/p6    91.479817    71.940000   -57.706017    13.225245    -9.471884    17.056254    # mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2)|mil88
+angle_coeff    14 class2/p6   123.127587    20.270534   -16.259824     3.726477    -2.668893     4.805941    # mm3->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88
+angle_coeff    14 class2/p6 bb    70.740760     1.850696     1.850696
+angle_coeff    14 class2/p6 ba   -23.487763   -23.487763     1.850696     1.850696   # strbnd->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88
+angle_coeff    15 class2/p6   130.543006    26.297883   -21.094608     4.834528    -3.462476     6.234965    # mm3->(c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88
+angle_coeff     4 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff     4 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph
+angle_coeff     5 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff     5 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph
+angle_coeff     6 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff     6 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph
+angle_coeff    10 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff    10 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88
+angle_coeff    11 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff    11 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88
+angle_coeff    13 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff    13 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2)|mil88
+angle_coeff    15 class2/p6 bb     0.000000     0.000000     0.000000
+angle_coeff    15 class2/p6 ba     0.000000     0.000000     0.000000     0.000000   # strbnd->(c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88
+
+dihedral_style hybrid opls
+
+dihedral_coeff     1 opls     0.000000     2.470272     0.000000     0.000000    # cos3->(o2_c1fe1@co2,c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88
+dihedral_coeff     2 opls     0.000000     5.530560     0.000000     0.000000    # cos3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88
+dihedral_coeff     3 opls     0.000000     0.789364     0.000000     0.000000    # cos3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88
+dihedral_coeff     4 opls     0.000000     7.043618     0.000000     0.000000    # cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88
+dihedral_coeff     5 opls     0.000000     4.700735     0.000000     0.000000    # cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88
+dihedral_coeff     6 opls     0.000000     3.523253     0.000000     0.000000    # cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph
+dihedral_coeff     7 opls     0.000000     5.427836     0.000000     0.000000    # cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph
+dihedral_coeff     8 opls     0.000000     4.379000     0.000000     0.000000    # cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph
+dihedral_coeff     9 opls     0.000000     6.812591     0.000000     0.000000    # cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph
+dihedral_coeff    10 opls     0.000000     6.316000     0.000000     0.000000    # cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|mil88
+dihedral_coeff    11 opls     0.000000     5.972000     0.000000     0.000000    # cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene
+dihedral_coeff    12 opls     0.000000     4.379000     0.000000     0.000000    # cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88
+dihedral_coeff    13 opls     0.000000     4.379000     0.000000     0.000000    # cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88
+dihedral_coeff    14 opls     0.000000     4.379000     0.000000     0.000000    # cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88
+dihedral_coeff    15 opls     0.000000     6.316000     0.000000     0.000000    # cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88
+dihedral_coeff    16 opls     0.000000     0.000000     0.000000     0.000000    # cos3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88
+dihedral_coeff    17 opls     0.000000     1.778019     0.000000     0.000000    # cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88
+dihedral_coeff    18 opls     0.000000     0.276745     0.000000     0.000000    # cos3->(o3_fe3@fe3o,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88
+dihedral_coeff    19 opls     0.000000     0.000000     0.000000     0.000000    # cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88
+
+improper_style hybrid inversion/harmonic
+
+improper_coeff     1 inversion/harmonic    32.961109     0.000000    # harm->(c3_c1o2@co2,c3_c3@ph,o2_c1fe1@co2,o2_c1fe1@co2)|mil88
+improper_coeff     2 inversion/harmonic    21.582000     0.000000    # harm->(c3_c3@ph,c3_c1o2@co2,c3_c2h1@ph,c3_c2h1@ph)|mil88
+improper_coeff     3 inversion/harmonic     8.143536     0.000000    # harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph
+improper_coeff     4 inversion/harmonic    21.582000     0.000000    # harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,h1_c1@ph)|mil88
+improper_coeff     5 inversion/harmonic     4.100580     0.000000    # harm->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88
+improper_coeff     6 inversion/harmonic     4.543874     0.000000    # harm->(o3_fe3@fe3o,fe5_o5@fe3o,fe5_o5@fe3o,fe5_o5@fe3o)|mil88
+
+special_bonds lj 0.00 0.00 1.00 coul 1.00 1.00 1.00
+
+# ------------------------ None FORCE FIELD END --------------------------

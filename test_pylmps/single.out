@@ -1,0 +1,105 @@
+LAMMPS (2 Aug 2023 - Update 1)
+DEBUG Setting up lammps_pots
+ff2lammps: getting charges from ff
+            vdW :     -0.00177011 kcal/mol
+        Coulomb : -65229.11271885 kcal/mol
+        CoulPBC :      0.00000000 kcal/mol
+           bond :   2273.79630223 kcal/mol
+          angle :  25279.33082653 kcal/mol
+            oop :     13.63241784 kcal/mol
+        torsion :   1429.23399961 kcal/mol
+          TOTAL : -36233.12094276 kcal/mol
+|-------------------------------------------------------------------------------|
+| Timer report                                       | elapsed   rel.%   tot.%  |
+|-------------------------------------------------------------------------------|
+| pylmps                                  |--------- | 0.70504s  100.0%  100.0% |
+|   init ff2lammps                        |          | 0.01519s    2.2%    2.2% |
+|   write data                            |-         | 0.11553s   16.4%   16.4% |
+|   write input                           |          | 0.03740s    5.3%    5.3% |
+|   lammps read input                     |-         | 0.12131s   17.2%   17.2% |
+|-------------------------------------------------------------------------------|
+|-------------------------------------------------------------------------------|
+| Timer report                                       | elapsed   rel.%   tot.%  |
+|-------------------------------------------------------------------------------|
+| ff2lammps                               |--------- | 0.34716s  100.0%  100.0% |
+|   setup pair pots                       |          | 0.00016s    0.0%    0.0% |
+|   molecules addon                       |          | 0.00061s    0.2%    0.2% |
+|   par loop bnd                          |          | 0.00167s    0.5%    0.5% |
+|   par loop ang                          |          | 0.00255s    0.7%    0.7% |
+|   par loop dih                          |          | 0.00502s    1.4%    1.4% |
+|   par loop oop                          |          | 0.00081s    0.2%    0.2% |
+|   par loop cha                          |          | 0.00146s    0.4%    0.4% |
+|   par loop vdw                          |          | 0.00145s    0.4%    0.4% |
+|   write data                            |---       | 0.11552s   33.3%   33.3% |
+|   write input                           |-         | 0.03739s   10.8%   10.8% |
+|-------------------------------------------------------------------------------|
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+
+The 'box' command has been removed and will be ignored
+
+Reading data file ...
+  triclinic box = (0 0 0) to (59.254463 51.773957 71.152438) with tilt (-28.814277 0.021696 -0.015488)
+WARNING: Triclinic box skew is large. LAMMPS will run inefficiently. (src/domain.cpp:220)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  4482 atoms
+  scanning bonds ...
+  5 = max bonds/atom
+  scanning angles ...
+  10 = max angles/atom
+  scanning dihedrals ...
+  24 = max dihedrals/atom
+  scanning impropers ...
+  3 = max impropers/atom
+  reading bonds ...
+  5184 bonds
+  reading angles ...
+  9234 angles
+  reading dihedrals ...
+  14904 dihedrals
+  reading impropers ...
+  2322 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     5 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    23 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.119 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        1       
+  special bond factors coul:  1        1        1       
+     5 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    23 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Generated 0 of 36 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 14
+  ghost atom cutoff = 14
+  binsize = 7, bins = 13 8 11
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair buck6d/coul/gauss/dsf, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/tri
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+WARNING: Inconsistent image flags (src/domain.cpp:815)
+Per MPI rank memory allocation (min/avg/max) = 22.19 | 22.19 | 22.19 Mbytes
+    PotEng          Temp           Pxx            Pyy            Pzz      
+-36233.121      0             -12638.334     -12207.361     -16683.311    
+Loop time of 1.432e-06 on 1 procs for 0 steps with 4482 atoms
+
+Total wall time: 0:00:00

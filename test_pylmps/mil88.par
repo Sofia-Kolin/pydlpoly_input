@@ -1,0 +1,543 @@
+hash : 887cd26a-dd67-4a85-97f8-92caacbf8504
+version : 1.0
+settings :
+    radfact : 1.0
+    radrule : arithmetic
+    epsrule : geometric
+    coul12 : 1.0
+    coul13 : 1.0
+    coul14 : 1.0
+    vdw12 : 0.0
+    vdw13 : 0.0
+    vdw14 : 1.0
+    chargetype : gaussian
+    cutoff : 12.0
+    vdwtype : exp6_damped
+    cut_lj_inner : 10.0
+    cut_lj : 12.0
+    coreshell : false
+    tailcorr : false
+    chargegen : ff
+    topoqeq_par : topoqeq.par
+bnd :
+    mm3->(c3_c2h1@ph,c3_c3@ph)|ph-ph : # 2 4
+        ric : 1
+        pot : mm3
+        par :
+            kb : 7.08  # mdyne/A
+            r0 : 1.394 # A
+    mm3->(c3_c2h1@ph,c3_c2h1@ph)|benzene : # 2 2
+        ric : 2
+        pot : mm3
+        par :
+            kb : 7.08  # mdyne/A
+            r0 : 1.394 # A
+    mm3->(c3_c2h1@ph,h1_c1@ph)|benzene : # 2 5
+        ric : 3
+        pot : mm3
+        par :
+            kb : 5.43  # mdyne/A
+            r0 : 1.094 # A
+    mm3->(c3_c1o2@co2,c3_c3@ph)|mil88 : #3 4
+        ric : 4
+        pot : mm3
+        par :
+            kb : 5.507563  # mdyne/A
+            r0 : 1.465661 # A
+    mm3->(c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 3 75
+        ric : 5
+        pot : mm3
+        par :
+            kb : 7.904084  # mdyne/A
+            r0 : 1.286633 # A
+    mm3->(c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 180
+        ric : 6
+        pot : mm3
+        par :
+            kb : 7.08  # mdyne/A
+            r0 : 1.394 # A
+    mm3->(c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 180 180
+        ric : 7
+        pot : mm3
+        par :
+            kb : 7.08  # mdyne/A
+            r0 : 1.394 # A
+    mm3->(fe5_o5@fe3o,o3_fe3@fe3o)|mil88 : # 61 6
+        ric : 8
+        pot : mm3
+        par :
+            kb : 3.199630  # mdyne/A
+            r0 : 1.850696 # A
+    mm3->(fe5_o5@fe3o,o2_c1fe1@co2)|mil88 : # 61 75
+        ric : 9
+        pot : mm3
+        par :
+            kb : 1.657018  # mdyne/A
+            r0 : 1.936573 # A
+ang :
+    mm3->(c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph : # 2 4 2
+        ric : 1
+        pot : mm3
+        par :
+            ka : 0.954803  # mdyn*A/rad^2
+            a0 : 116.633347 # deg
+    mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph : # 2 2 4
+        ric : 2
+        pot : mm3
+        par :
+            ka : 0.977738  # mdyn*A/rad^2
+            a0 : 122.254870 # deg
+    mm3->(c3_c3@ph,c3_c2h1@ph,h1_c1@ph)|ph-ph : # 4 2 5
+        ric : 3
+        pot : mm3
+        par :
+            ka : 0.499736  # mdyn*A/rad^2
+            a0 : 115.542562 # deg
+    mm3->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene : # 2 2 5
+        ric : 4
+        pot : mm3
+        par :
+            ka : 0.503000  # mdyn*A/rad^2
+            a0 : 120.350000 # deg
+    strbnd->(c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene : # 2 2 5
+        ric : 4
+        pot : strbnd
+        par :
+            ksb1 : -0.175  # mdyn*A/rad^2
+            ksb2 : 0.372 # mdyn*A/rad^2
+            kss : 0.649 # mdyn/A
+            r01 : 1.394 # A
+            r02 : 1.094 # A
+            a0 : 120.35 # deg
+    mm3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 4 3 75
+        ric : 5
+        pot : mm3
+        par :
+            ka : 1.265062  # mdyn*A/rad^2
+            a0 : 114.230190 # deg
+    strbnd->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 4 3 75
+        ric : 5
+        pot : strbnd
+        par :
+            ksb1 : 0.062289  # mdyn*A/rad^2
+            ksb2 : 0.349524 # mdyn*A/rad^2
+            kss : 0.050955 # mdyn/A
+            r01 : 1.465661 # A
+            r02 : 1.286633 # A
+            a0 : 114.230190 # deg
+    mm3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 75 3 75
+        ric : 6
+        pot : mm3
+        par :
+            ka : 1.169966  # mdyn*A/rad^2
+            a0 : 120.068005 # deg
+    strbnd->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2)|mil88 : # 75 3 75
+        ric : 6
+        pot : strbnd
+        par :
+            ksb1 : 0.1188445  # mdyn*A/rad^2
+            ksb2 : 0.1188445 # mdyn*A/rad^2
+            kss : 1.339837 # mdyn/A
+            r01 : 1.286633 # A
+            r02 : 1.286633 # A
+            a0 : 120.068005 # deg
+    mm3->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 3 4 2
+        ric : 7
+        pot : mm3
+        par :
+            ka : 1.165020  # mdyn*A/rad^2
+            a0 : 111.782190 # deg
+    strbnd->(c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 3 4 2
+        ric : 7
+        pot : strbnd
+        par :
+            ksb1 : -0.094745  # mdyn*A/rad^2
+            ksb2 : 0.175389 # mdyn*A/rad^2
+            kss : 0.368871 # mdyn/A
+            r01 : 1.465661 # A
+            r02 : 1.401856 # A
+            a0 : 111.782190 # deg
+    mm3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 2 180
+        ric : 8
+        pot : mm3
+        par :
+            ka : 0.7410  # mdyn*A/rad^2
+            a0 : 127.0500 # deg
+    strbnd->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 2 2 180
+        ric : 8
+        pot : strbnd
+        par :
+            ksb1 : 0.0470  # mdyn*A/rad^2
+            ksb2 : 0.0470 # mdyn*A/rad^2
+            kss : 0.4990 # mdyn/A
+            r01 : 1.394000 # A
+            r02 : 1.3940 # A
+            a0 : 127.0500 # deg
+    mm3->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 5
+        ric : 9
+        pot : mm3
+        par :
+            ka : 0.5030  # mdyn*A/rad^2
+            a0 : 120.3500 # deg
+    strbnd->(c3_c3_b@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 5
+        ric : 9
+        pot : strbnd
+        par :
+            ksb1 : -0.1750  # mdyn*A/rad^2
+            ksb2 : 0.3720 # mdyn*A/rad^2
+            kss : 0.6490 # mdyn/A
+            r01 : 1.3940 # A
+            r02 : 1.094000 # A
+            a0 : 120.3500 # deg
+    mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 2 180 180
+        ric : 10
+        pot : mm3
+        par :
+            ka : 0.7410  # mdyn*A/rad^2
+            a0 : 127.0500 # deg
+    mm3->(c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 2 180 2
+        ric : 11
+        pot : mm3
+        par :
+            ka : 0.7410  # mdyn*A/rad^2
+            a0 : 127.0500 # deg
+    mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88 : # 75 61 6
+        ric : 12
+        pot : mm3
+        par :
+            ka : 0.012039  # mdyn*A/rad^2
+            a0 : 78.335332 # deg
+    strbnd->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o)|mil88 : # 75 61 6
+        ric : 12
+        pot : strbnd
+        par :
+            ksb1 : -0.149017  # mdyn*A/rad^2
+            ksb2 : -0.114970 # mdyn*A/rad^2
+            kss : 0.050955 # mdyn/A
+            r01 : 1.936573 # A
+            r02 : 1.850696 # A
+            a0 : 78.335332 # deg
+    mm3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2)|mil88 : # 75 61 75
+        ric : 13
+        pot : mm3
+        par :
+            ka : 1.0  # mdyn*A/rad^2
+            a0 : 91.47981718 # deg
+    mm3->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 : # 61 6 61
+        ric : 14
+        pot : mm3
+        par :
+            ka : 0.281770  # mdyn*A/rad^2
+            a0 : 123.127587 # deg
+    strbnd->(fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 : # 61 6 61
+        ric : 14
+        pot : strbnd
+        par :
+            ksb1 : -0.1632455  # mdyn*A/rad^2
+            ksb2 : -0.1632455 # mdyn*A/rad^2
+            kss : 0.491665 # mdyn/A
+            r01 : 1.850696 # A
+            r02 : 1.850696 # A
+            a0 : 123.127587 # deg
+    mm3->(c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 3 75 61
+        ric : 15
+        pot : mm3
+        par :
+            ka : 0.365553  # mdyn*A/rad^2
+            a0 : 130.543006 # deg
+dih :
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph : # 2 2 4 2
+        ric : 1
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 3.523253 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c2h1@ph)|ph-ph : # 5 2 4 2
+        ric : 2
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 5.427836 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph : # 180 2 2 4
+        ric : 3
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph)|ph-ph : # 5 2 2 4
+        ric : 4
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 6.812591 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|benzene : # 5 2 2 5
+        ric : 5
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 5.972000 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,c3_c1o2@co2,c3_c3@ph,c3_c2h1@ph)|mil88 : # 75 3 4 2
+        ric : 6
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 2.470272 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c3@ph,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 4 3 75 61
+        ric : 7
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 5.530560 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,c3_c1o2@co2,o2_c1fe1@co2,fe5_o5@fe3o)|mil88 : # 75 3 75 61
+        ric : 8
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.789364 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88 : # 2 2 4 3
+        ric : 9
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 7.043618 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3@ph,c3_c1o2@co2)|mil88 : # 5 2 4 3
+        ric : 10
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.700735 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,h1_c1@ph)|mil88 : # 180 2 2 5
+        ric : 11
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 6.3160 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 2 2 180 180
+        ric : 12
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 2 2 180 2
+        ric : 13
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph)|mil88 : # 5 2 180 180
+        ric : 14
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 4.3790 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(h1_c1@ph,c3_c2h1@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 5 2 180 2
+        ric : 15
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 6.3160 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(c3_c2h1@ph,c3_c3_b@ph,c3_c3_b@ph,c3_c2h1@ph)|mil88 : # 2 180 180 2
+        ric : 16
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.0 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o3_fe3@fe3o,fe5_o5@fe3o)|mil88 : # 75 61 6 61
+        ric : 17
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 1.778019 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o3_fe3@fe3o,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88 : # 6 61 75 3
+        ric : 18
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.276745 # kcal/mol
+            V3 : 0.0 # kcal/mol
+    cos3->(o2_c1fe1@co2,fe5_o5@fe3o,o2_c1fe1@co2,c3_c1o2@co2)|mil88 : # 75 61 75 3
+        ric : 19
+        pot : cos3
+        par :
+            V1 : 0.0  # kcal/mol
+            V2 : 0.0 # kcal/mol
+            V3 : 0.0 # kcal/mol        
+oop :
+    harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3@ph,h1_c1@ph)|ph-ph : # 2 2 4 5
+        ric : 1
+        pot : harm
+        par :
+            ko : 0.037733  # mdyne*A/rad^2
+            o0 : 0.0 # deg
+    harm->(c3_c1o2@co2,c3_c3@ph,o2_c1fe1@co2,o2_c1fe1@co2)|mil88 : # 3 4 75 75
+        ric : 2
+        pot : harm
+        par :
+            ko : 0.152725  # mdyne*A/rad^2
+            o0 : 0.0 # deg
+    harm->(c3_c3@ph,c3_c1o2@co2,c3_c2h1@ph,c3_c2h1@ph)|mil88 : # 4 3 2 2
+        ric : 3
+        pot : harm
+        par :
+            ko : 0.1  # mdyne*A/rad^2
+            o0 : 0.0 # deg
+    harm->(c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph,h1_c1@ph)|mil88 : # 2 2 180 5
+        ric : 4
+        pot : harm
+        par :
+            ko : 0.1  # mdyne*A/rad^2
+            o0 : 0.0 # deg
+    harm->(c3_c3_b@ph,c3_c2h1@ph,c3_c2h1@ph,c3_c3_b@ph)|mil88 : # 180 2 2 180
+        ric : 5
+        pot : harm
+        par :
+            ko : 0.0190  # mdyne*A/rad^2
+            o0 : 0.0 # deg
+    harm->(o3_fe3@fe3o,fe5_o5@fe3o,fe5_o5@fe3o,fe5_o5@fe3o)|mil88 : # 6 61 61 61
+        ric : 6
+        pot : harm
+        par :
+            ko : 0.021054  # mdyne*A/rad^2
+            o0 : 0.0 # deg
+cha :
+    gaussian->(c3_c3@ph)|ph-ph : # 4
+        ric : 1
+        pot : gaussian
+        par :
+            q : -0.030000  # e
+            sigma : 1.162986 # A
+    gaussian->(c3_c2h1@ph)|benzene : # 2
+        ric : 2
+        pot : gaussian
+        par :
+            q : -0.120000  # e
+            sigma : 1.162986 # A
+    gaussian->(h1_c1@ph)|benzene : # 5
+        ric : 3
+        pot : gaussian
+        par :
+            q : 0.12  # e
+            sigma : 0.723638 # A
+    gaussian->(c3_c1o2@co2)|mil88 : # 3
+        ric : 4
+        pot : gaussian
+        par :
+            q : 0.83  # e
+            sigma : 1.162986 # A
+    gaussian->(c3_c3_b@ph)|mil88 : # 180
+        ric : 5
+        pot : gaussian
+        par :
+            q : 0.0  # e
+            sigma : 1.163 # A
+    gaussian->(fe5_o5@fe3o)|mil88 : # 61
+        ric : 6
+        pot : gaussian
+        par :
+            q : 1.6  # e
+            sigma : 2.073 # A
+    gaussian->(o3_fe3@fe3o)|mil88 : # 6
+        ric : 7
+        pot : gaussian
+        par :
+            q : -0.8  # e
+            sigma : 1.118000 # A
+    gaussian->(o2_c1fe1@co2)|mil88 : # 75
+        ric : 8
+        pot : gaussian
+        par :
+            q : -0.65  # e
+            sigma : 1.118000 # A
+    gaussian->(cl0_@cl-)|mil88 : # 100
+        ric : 9
+        pot : gaussian
+        par :
+            q : -1.0  # e
+            sigma : 1.57 # A
+vdw :
+    buck6d->(c3_c3@ph)|ph-ph : # 4
+        ric : 1
+        pot : buck6d
+        par :
+            r0 : 1.94  # A
+            eps : 0.056 # kcal/mol
+    buck6d->(c3_c2h1@ph)|benzene : # 2
+        ric : 2
+        pot : buck6d
+        par :
+            r0 : 1.96  # A
+            eps : 0.056 # kcal/mol
+    buck6d->(h1_c1@ph)|benzene : # 5
+        ric : 3
+        pot : buck6d
+        par :
+            r0 : 1.62  # A
+            eps : 0.02 # kcal/mol
+    buck6d->(c3_c1o2@co2)|mil88 : # 3
+        ric : 4
+        pot : buck6d
+        par :
+            r0 : 1.94  # A
+            eps : 0.056 # kcal/mol
+    buck6d->(c3_c3_b@ph)|mil88 : # 180
+        ric : 5
+        pot : buck6d
+        par :
+            r0 : 1.96  # A
+            eps : 0.056 # kcal/mol
+    buck6d->(fe5_o5@fe3o)|mil88 : # 61
+        ric : 6
+        pot : buck6d
+        par :
+            r0 : 2.2  # A
+            eps : 0.02 # kcal/mol
+    buck6d->(o3_fe3@fe3o)|mil88 : # 6
+        ric : 7
+        pot : buck6d
+        par :
+            r0 : 1.82  # A
+            eps : 0.059 # kcal/mol
+    buck6d->(o2_c1fe1@co2)|mil88 : # 75
+        ric : 8
+        pot : buck6d
+        par :
+            r0 : 1.82  # A
+            eps : 0.059 # kcal/mol
+    buck6d->(cl0_@cl-)|mil88 : # 100
+        ric : 9
+        pot : buck6d
+        par :
+            r0 : 2.07  # A
+            eps : 0.24 # kcal/mol
+chapr :  {}
+vdwpr :
+    buck6d->(cl0_@cl-,fe5_o5@fe3o)|mil88 : # 100 - 61
+        pot : buck6d
+        par :
+            eps : 30.24  # kcal/mol
+            r0 : 4.482 # A
+    buck6d->(cl0_@cl-,o3_fe3@fe3o)|mil88 : # 100 - 6
+        pot : buck6d
+        par :
+            eps : 2.0  # kcal/mol
+            r0 : 8.306 # A 
+
+
+ 
